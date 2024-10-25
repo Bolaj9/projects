@@ -1,0 +1,41 @@
+@charset "UTF-8";
+body {
+    padding: 0;
+    margin: 0;
+    color: rgba(0,0,0,0.61);
+    background-color: rgba(247,247,247,0.30);
+}
+wrapper {
+    width: 1336px;
+    margin: 0 auto;
+    display: block;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+header {
+    padding: 10px 20px;
+    color: #000000;
+    background-color: rgba(149,149,149,1.00);
+}
+nav {
+    padding: 10px 10px;
+    margin: 0 auto;
+    background-color: rgba(57,57,57,0.59);
+    display: block;
+    font-size: large;
+}
+nav ul {
+    background-color: rgba(16,16,16,0.84);
+    padding: 10px 16px;
+    display: inline-block;
+}
+ul a li {
+    margin: 0;
+    padding: 16px 10px;
+    display: inline-block;
+}
+footer {
+    color: #000000;
+}
+ul a li:hover  {
+}
