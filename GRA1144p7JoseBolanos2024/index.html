@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Voyage | Jose Bolanos, 2024</title>
+<style type="text/css">
+body {
+    margin: 0;
+    background-image: url(Italybackground.jpeg);
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header {
+    height: 100px;
+    background-color: rgba(232,232,232,0.75);
+}
+wrapper {
+    width: 1200px;
+    margin: auto;
+    display: block;
+}
+footer {
+    background-color: rgba(0,0,0,0.50);
+    position: fixed;
+    bottom: 0px;
+    height: 100px;
+    color: rgba(206,206,206,1.00);
+    font-size: large;
+}
+#Tabs1 ul li img {
+    height: 50px;
+    margin: 8px;
+    width: auto;
+    background-color: rgba(255,255,255,0.00);
+}
+#Tabs1 ul li {
+    padding: 8px;
+    text-align: center;
+}
+#Tabs1 ul {
+    background-color: rgba(0,16,74,0.90);
+    border: none;
+    background-image: none;
+}
+#Tabs1 {
+    border: none;
+    background-color: transparent;
+    background-image: none;
+}
+#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {
+    background-color: rgba(0,32,165,0.76);
+    color: rgba(224,224,224,1.00);
+}
+input ,select{
+    width: 96.5%;
+    border: thin solid rgba(23,42,102,1.00);
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 8px 0px;
+    box-sizing: border-box;
+}
+.date  ,select, .submit{
+    width: 48%;
+    display: inline;
+    border-radius: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: medium solid rgba(25,43,103,1.00);
+}
+.submit {
+    background-color: rgba(0,42,190,1.00);
+    color: rgba(255,255,255,1.00);
+    font-weight: bold;
+    font-size: xx-large;
+    border: thin groove rgba(0,0,0,1.00);
+}
+.submit {
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<header>&nbsp;</header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><img src="airplane.png" alt="" width="402" height="472"><br>
+      <a href="#tabs-1">Flights</a></li>
+      <li><img src="Hotel.png" alt="" width="418" height="526"><br>
+      <a href="#tabs-2">Hotels</a></li>
+      <li><img src="car.png" alt="" width="544" height="302"><br>
+      <a href="#tabs-3">Rentals</a></li>
+      <li><img src="cruise.png" alt="" width="556" height="502"><br>
+      <a href="#tabs-4">Cruises</a></li>
+      <li><img src="events.png" alt="" width="600" height="540"><br>
+      <a href="#tabs-5">Events</a></li>
+    </ul>
+    <div id="tabs-1"><input type="text" placeholder="Where to?">
+<input name="date" type="date" class="date">
+      <input name="date2" type="date" class="date">
+<select name="select" class="date">
+        <option value="0">Number of Travelers</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5+">5+</option>
+      </select><input type="submit" class="submit" value="Find your Flight">
+    </div>
+    <div id="tabs-2">
+      <p>Content 2</p>
+    </div>
+    <div id="tabs-3">
+      <p>Content 3</p>
+    </div>
+    <div id="tabs-4">
+      <p>Content 4</p>
+    </div>
+    <div id="tabs-5">
+      <p>Content 5</p>
+    </div>
+  </div>
+</wrapper>
+<footer><p>&copy; 2024, Jose Bolanos. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
