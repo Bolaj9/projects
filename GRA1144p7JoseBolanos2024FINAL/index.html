@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Voyage | Jose Bolanos, 2024</title>
+<style type="text/css">
+body {
+    margin: 0;
+    background-image: url(Italybackground.jpeg);
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header {
+    background-color: rgba(232,232,232,0.75);
+    height: 200px;
+}
+wrapper {
+    width: 1200px;
+    margin: auto;
+    display: block;
+}
+footer {
+    background-color: rgba(0,0,0,0.50);
+    position: fixed;
+    bottom: 0px;
+    height: 100px;
+    color: rgba(206,206,206,1.00);
+    font-size: large;
+}
+#Tabs1 ul li img {
+    height: 50px;
+    margin: 8px;
+    width: auto;
+    background-color: rgba(255,255,255,0.00);
+}
+#Tabs1 ul li {
+    padding: 8px;
+    text-align: center;
+}
+#Tabs1 ul {
+    background-color: rgba(0,16,74,0.90);
+    border: none;
+    background-image: none;
+}
+#Tabs1 {
+    border: none;
+    background-color: transparent;
+    background-image: none;
+}
+#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {
+    background-color: rgba(0,32,165,0.76);
+    color: rgba(224,224,224,1.00);
+}
+input ,select{
+    width: 96.5%;
+    border: thin solid rgba(23,42,102,1.00);
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 8px 0px;
+    box-sizing: border-box;
+}
+.date  ,select, .submit{
+    width: 48%;
+    display: inline;
+    border-radius: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: medium solid rgba(25,43,103,1.00);
+}
+.submit {
+    background-color: rgba(0,42,190,1.00);
+    color: rgba(255,255,255,1.00);
+    font-weight: bold;
+    font-size: xx-large;
+    border: thin groove rgba(0,0,0,1.00);
+}
+.img   {
+    display: block;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    width: 25%;
+    height: 100%;
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<header><img src="Voyage-01.png" alt="" width="5692" height="3200" class="img"/>&nbsp;</header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><img src="airplane.png" alt="" width="402" height="472"><br>
+      <a href="#tabs-1">Flights</a></li>
+      <li><img src="Hotel.png" alt="" width="418" height="526"><br>
+      <a href="#tabs-2">Hotels</a></li>
+      <li><img src="car.png" alt="" width="544" height="302"><br>
+      <a href="#tabs-3">Rentals</a></li>
+      <li><img src="cruise.png" alt="" width="556" height="502"><br>
+      <a href="#tabs-4">Cruises</a></li>
+      <li><img src="events.png" alt="" width="600" height="540"><br>
+      <a href="#tabs-5">Events</a></li>
+    </ul>
+    <div id="tabs-1"><input type="text" placeholder="Where to?">
+<input name="date" type="date" class="date">
+      <input name="date2" type="date" class="date">
+<select name="select" class="date">
+        <option value="0">Number of Travelers</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5+">5+</option>
+      </select><input type="submit" class="submit" value="Find your Flight">
+    </div>
+    <div id="tabs-2"> <input type="text" placeholder="Where to?">
+<input name="date" type="date" class="date">
+<input name="date3" type="date" class="date">
+<select>
+  <option value="0">Number of Travelers</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5+">5+</option>
+</select>
+<input class="submit" placeholder="Find Rooms"value="Find Your Room">
+    </div>
+    <div id="tabs-3"><input type="text" class="date" placeholder="Pick-up">
+      <input type="text" class="date" placeholder="Drop-off">
+<input name="date" type="date" class="date">
+<input name="date5" type="date" class="date">
+<input name="time" type="time" class="time" value="10:30:00">
+<input name="time2" type="time" class="time" value="10:30:00">
+<input name="submit" type="submit" class="submit" value="Find your vehicle">
+</div>
+<div id="tabs-4">
+<select name="select" id="select">
+  <option value="0">Where to?</option>
+  <option>Bahamas</option>
+  <option>Mexico</option>
+  <option>Alaska</option>
+  <option>Bermuda</option>
+  <option>Canada</option>
+</select>
+<select name="select2" id="select2">
+  <option>Select a Month</option>
+  <option>January</option>
+  <option>February</option>
+  <option>March</option>
+  <option>April</option>
+  <option>May</option>
+  <option>June</option>
+  <option>July</option>
+  <option>August</option>
+  <option>September</option>
+  <option>October</option>
+  <option>November</option>
+  <option>December</option>
+</select>
+<select name="select3" id="select3">
+  <option selected="selected">Cruise lengths</option>
+  <option>1 to 2 nights</option>
+  <option>3 to 5 nights</option>
+  <option>6 to 8 nights</option>
+  <option>9 to 11 nights</option>
+  <option>12+ Nights</option>
+</select>
+<input name="submit" type="submit" class="submit" value="Find your Cruise">
+</div>
+<div id="tabs-5"> <input type="text" placeholder="Where to?">
+<input name="date" type="date" class="date">
+<input name="date4" type="date" class="date">
+<input name="submit" type="submit" class="submit" value="Submit">
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script> </div>
+</wrapper>
+<footer><p>&copy; 2024, Jose Bolanos. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+</body>
+</html>
