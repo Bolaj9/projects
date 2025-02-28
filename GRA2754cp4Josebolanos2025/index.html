@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Class Project 4 | Jose Bolanos , 2025</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script type="text/javascript">
+  $(document).ready(
+    function() {
+      $('#icon').click (
+        function() {
+          $('#nav').show();
+          $('#icon').hide();
+          $('#x_icon').show();
+        }
+  );
+  $('#x_icon').click (
+    function() {
+          $('#nav').hide();
+          $('#icon').show();
+          $('#x_icon').hide();
+        }
+      );
+    }
+  );
+</script>
+	
+<style type="text/css">
+body {
+    margin: 0;
+    background-color: palegreen;
+}
+wrapper {
+    width: 80%;
+    max-width: 1500px;
+    min-width: 500px;
+    margin: auto;
+    display: block;
+    background-color: rgba(255,255,255,0.5);
+    text-align: center;
+}
+section {
+    height: 500px;
+    margin: 15px 0;
+}
+body {
+}
+#nav {
+    display: none;
+}
+#icon ,#x_icon{
+    width: 50px;
+    height: auto;
+    float: right;
+}
+
+@media (min-width:600px){
+section {
+    margin: 10px;
+    width: 42%;
+    display: inline-block;
+    vertical-align: text-top;
+    border: thin solid rgba(254,0,4,1.00);
+}
+.banner {
+    margin: 10px 0;
+    width: 100%;
+}
+#nav {
+    display: inline;
+}
+#icon {
+    display: none;
+}
+ul li {
+    display: inline-block;
+}
+}
+</style>
+</head>
+
+<body>
+<wrapper>
+  <header><img id="icon" src="images2/menu.png" alt="Navigation icon. Click to expand navigation menu."/>
+<img id="x_icon" src="images2/x.png" alt="Exit out icon. Click to close navigation menu." style="display: none;" />
+<nav id="nav">
+  <ul>
+    <a href="#home" id="about_us_link"><li>About Us</li></a>
+    <a href="#about" id="blogs_link"><li>Blogs</li></a>
+    <a href="#contact" id="contact_us_link"><li>Contact Us</li></a>
+  </ul>
+</nav></header>
+  <section class="banner" id="home">
+    <h1>Class Project 4</h1>
+ Content for New section Tag Goes Here</section>
+  <section id="about">
+    <h2>About us&nbsp;</h2>
+  Content for New section Tag Goes Here</section>
+  <section id="contact">
+    <h2>Contact us</h2>
+  Content for New section Tag Goes Here</section>
+  <footer>Content for New footer Tag Goes Here</footer>
+</wrapper>
+</body>
+</html>
