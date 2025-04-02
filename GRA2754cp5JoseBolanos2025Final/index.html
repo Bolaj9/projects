@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+	body{
+		margin: 0;
+		background-image: url( "Backgroundimage.jpg")
+		}
+	wrapper{
+		width: 1920px;
+		display: block;
+		margin: auto;
+	}
+#div1,#div2,#div3,#div4 {
+    float: left;
+    width: 350px;
+    height: 300px;
+    border: 10px solid #EF974B;
+    display: block;
+    margin-left: 5%;
+    border-radius: 50px;
+}
+h1 {
+    text-align: center;
+    font-size: 300%;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-variant: normal;
+    text-shadow: 5px 5px 5px rgba(255,255,255,1.00);
+}
+	#div1{
+		background: url( "Ponyobg.jpg")
+	}
+	#div2{
+	background: url("Turnipbg.jpg")
+	}
+	#div3{
+		background: url("Kodamabg.jpg")
+	}
+	#div4{
+		background: url("Sootbg.jpg")
+	}
+	#div5{
+    background: url(https://static.boredpanda.com/blog/wp-content/uploads/2020/04/11-5ea043059c984__700.jpg);
+    width: 700px;
+    height: 400px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    float: left;
+    align-content: center;
+    margin-left: 32%;
+    margin-bottom: 3%;
+    border: thick solid rgba(239,151,75,1.00);
+    border-radius: 10px;
+		}
+p {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    text-align: center;
+    font-size: 20px;
+}
+	clearfloat{
+		display: block;
+		clear:both; 
+	}
+footer {
+    padding-top: 30%;
+    text-align: center;
+}
+</style>
+<script>
+function dragstartHandler(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function dragoverHandler(ev) {
+  ev.preventDefault();
+}
+
+function dropHandler(ev) {
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+<wrapper>
+  <h1>Ghibli Scramble</h1>
+  <p>Match the correct creatures to the movie!&nbsp;&nbsp;</p>
+  <div id="div1" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"><img id="img1" src="tumblr_o2f1en3I8Z1ri6wvio1_1280.png" draggable="true" ondragstart="dragstartHandler(event)" width="336" height="300"></div>
+  <div id="div2" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"><img src="Kodama.png" width="336" height="300" id="img2" draggable="true" ondragstart="dragstartHandler(event)"></div>
+  <div id="div3" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"><img src="ponyo.png" width="336" height="300" id="img3" draggable="true" ondragstart="dragstartHandler(event)"></div>
+  <div id="div4" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"><img src="turniphead.png" width="336" height="300" id="img4" draggable="true" ondragstart="dragstartHandler(event)"></div>
+  <div id="div5" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+</wrapper>
+<clearfloat></clearfloat>
+<footer>&copy;2025, Jose Bolanos
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative </footer>
+</body>
+</html>
